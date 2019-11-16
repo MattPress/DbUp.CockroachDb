@@ -1,1 +1,1 @@
-# DbUp-CockroachDb
+# DbUp.CockroachDb
