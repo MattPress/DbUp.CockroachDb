@@ -1,1 +1,1 @@
-# dbup-cockroachdb
+# DbUp-CockroachDb
