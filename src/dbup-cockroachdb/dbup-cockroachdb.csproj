@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>DbUp makes it easy to deploy and upgrade SQL Server databases. This package adds CockroachDb support.</Description>
+    <Title>DbUp CockroachDb Support</Title>
+    <RootNamespace>DbUp.CockroachDb</RootNamespace>
+    <Authors>Matt Press</Authors>
+    <TargetFrameworks>netstandard1.3;netstandard2.0;net35;net45</TargetFrameworks>
+    <AssemblyName>dbup-cockroachdb</AssemblyName>
+    <PackageId>dbup-cockroachdb</PackageId>
+    <PackageIconUrl>https://raw.github.com/DbUp/DbUp/master/src/Information/dbup-icon.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/MattPress/DbUp.CockroachDb</PackageProjectUrl>
+    <PackageLicenseUrl>http://www.opensource.org/licenses/mit-license.php</PackageLicenseUrl>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="dbup-postgresql" Version="4.2.0" />
+  </ItemGroup>
+
+</Project>
