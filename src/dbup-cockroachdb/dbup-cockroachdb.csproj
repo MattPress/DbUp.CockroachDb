@@ -5,7 +5,7 @@
     <Title>DbUp CockroachDb Support</Title>
     <RootNamespace>DbUp.CockroachDb</RootNamespace>
     <Authors>Matt Press</Authors>
-    <TargetFrameworks>netstandard1.3;netstandard2.0;net35;net45</TargetFrameworks>
+    <TargetFrameworks>netstandard1.3;netstandard2.0;<!--net35;-->net45</TargetFrameworks>
     <AssemblyName>dbup-cockroachdb</AssemblyName>
     <PackageId>dbup-cockroachdb</PackageId>
     <PackageProjectUrl></PackageProjectUrl>
@@ -16,6 +16,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/MattPress/DbUp.CockroachDb</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   
   <ItemGroup>
