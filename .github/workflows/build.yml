@@ -20,7 +20,7 @@ jobs:
       with:
         dotnet-version: 2.2.108
     - name: Build
-      working-directory: /src/
+      working-directory: ./src
       run: dotnet build --configuration Release
   
   test:
@@ -34,5 +34,5 @@ jobs:
         with:
           dotnet-version: 2.2.108
       - name: Test
-        working-directory: /src/
+        working-directory: ./src
         run: dotnet test -- configuration Release
