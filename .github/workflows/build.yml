@@ -35,4 +35,24 @@ jobs:
           dotnet-version: 2.2.108
       - name: Test
         working-directory: ./src
-        run: dotnet test -- configuration Release
+        run: dotnet test --configuration Release
+  
+  release:
+    name: Release
+    runs-on: windows-latest
+    needs: [build, test]
+    if: github.event_name == 'push'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Setup .Net Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 2.2.108
+      - name: Build
+        working-directory: ./src
+        run: dotnet build --configuration Release
+      - name: Release
+        working-directory: ./src/dbup-cockroachdb/bin/Release
+        run: dotnet nuget push *.nupkg -k ${{ secrets.NUGET_API_KEY }}
+    
