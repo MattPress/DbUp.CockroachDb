@@ -19,9 +19,6 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.2.108
-    - name: Install .NET Framework 3.5
-      shell: powershell
-      run: Enable-WindowsOptionalFeature -Online -FeatureName NetFX3 -All
     - name: Build
       working-directory: ./src
       run: dotnet build --configuration Release
@@ -36,9 +33,6 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 2.2.108
-      - name: Install .NET Framework 3.5
-        shell: powershell
-        run: Enable-WindowsOptionalFeature -Online -FeatureName NetFX3 -All
       - name: Test
         working-directory: ./src
         run: dotnet test -- configuration Release
