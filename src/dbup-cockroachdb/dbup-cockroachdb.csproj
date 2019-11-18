@@ -16,6 +16,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RepositoryUrl>https://github.com/MattPress/DbUp.CockroachDb</RepositoryUrl>
+    <Version>1.0.2</Version>
   </PropertyGroup>
   
   <ItemGroup>
