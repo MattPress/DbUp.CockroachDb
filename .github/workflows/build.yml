@@ -54,5 +54,5 @@ jobs:
         run: dotnet build --configuration Release
       - name: Release
         working-directory: ./src/dbup-cockroachdb/bin/Release
-        run: dotnet nuget push **/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json
+        run: dotnet nuget push **/*.nupkg -k ${{ secrets.NUGET_API_KEY }} -s https://api.nuget.org/v3/index.json -n true
     
